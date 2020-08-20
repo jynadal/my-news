@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
+import Articles from './Articles';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Articles />     
     </div>
+
   );
 }
 
 export default App;
+
+// fetch("http://newsapi.org/v2/everything?q=apple&from=2020-08-19&to=2020-08-19&sortBy=popularity&apiKey=0ae6c474f16d443785d6e79535c20bda").then(response =>
+//   response.json()
+// ).then(results => {
+//   console.log(results);
+// });
